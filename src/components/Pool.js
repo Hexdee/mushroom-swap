@@ -1,13 +1,16 @@
 import React from 'react'
 
-export const Swap = () => {
+export const Pool = () => {
   return (
         <main className='main'>
             <div className='box'>
-                <h2 className='box_header'>Swap</h2>
+                <div className='box_header'><h2>Pool</h2><button>Add Liquidity</button></div>
                 <div className='divider'></div>
                 <div className='box_content'>
-                <div className='from_token_box'>
+                <h3>Your liquidity positions</h3>
+                <div className='divider'></div>
+                <p className='no_liquidity_text'>You do not have any open positions</p>
+                {/* <div className='from_token_box'>
                     <input className='amount' type='text' placeholder='0'/>
                     <div className='token_details'>
                         <p className='from_token'><img className='token_logo' src='images/eth-logo.png' alt=''/> sEther</p>
@@ -41,7 +44,7 @@ export const Swap = () => {
 
                 </div>
                 <div className='conversion_rate'>1 sEther = 0.00045 DAI</div>
-                <div className='button'><button>Enter amount</button></div>
+                <div className='button'><button>Enter amount</button></div> */}
                 </div>
             </div>
         </main>

@@ -75,22 +75,45 @@
 }
 
 .box {
-  width: 500px;
-  min-height: 400px;
+  width: 100%;
+  max-width: 450px;
   border-radius: 12px;
   background-color: #252B48;
 }
 
 .box_header {
   padding-left: 16px;
+  padding-right: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box_header button {
+  background-color: #F7E987;
+  color: #252B48;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 80%;
+}
+
+.box_content {
+  margin: 16px;
 }
 
 .divider {
   border-top: 1px solid #445069;
+  opacity: 30%;
 }
 
 .from_token_box, .to_token_box {
-  margin: 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
   padding: 4px 16px;
   border-radius: 12px;
   display: flex;
@@ -146,7 +169,6 @@
 }
 
 .button {
-  margin: 16px;
   display: flex;
 }
 
@@ -162,14 +184,12 @@
 }
 
 .expected_output_header {
-  margin-left: 24px;
+  margin-left: 8px;
   margin-bottom: 16px;
 }
 
 .expected_output {
   background-color: #445069;
-  margin-left: 16px;
-  margin-right: 16px;
   margin-bottom: 12px;
   border-radius: 12px;
   padding: 8px;
@@ -180,12 +200,45 @@
   margin-bottom: -25px;
   display: flex;
   justify-content: space-between;
+  gap: 8px;
+}
+
+.expected_output_item p:last-child {
+  text-align: right;
 }
 
 .expected_output_item:last-child {
   margin-bottom: -10px;
+  opacity: 50%;
 }
 
 .conversion_rate {
-  margin-left: 16px;
+  margin-bottom: 8px;
+}
+
+.no_liquidity_text {
+  opacity: 50%;
+  margin-left: 4px;
+}
+
+
+@media (max-width: 500px) {
+  .swap {
+    top: 70px;
+  }
+
+  .box {
+    margin-top: 50px;
+  }
+
+  .balance {
+    font-size: 0.7rem;
+  }
+
+  .wallet {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    overflow: hidden;
+  }
 }

@@ -6,14 +6,16 @@ import reportWebVitals from './reportWebVitals';
 
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import SwapPage from './pages/SwapPage';
+import PoolPage from './pages/PoolPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/swap" element={<SwapPage />} />
         <Route path="/" element={<App />} />
+        <Route path="/swap" element={<SwapPage />} />
+        <Route path="/pool" element={<PoolPage />} />
       </Routes>
     </BrowserRouter>
   // </React.StrictMode>

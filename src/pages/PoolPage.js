@@ -1,12 +1,12 @@
 import React from 'react'
-import { Swap } from '../components/Swap'
 import { Navbar } from '../components/Navbar'
+import { Pool } from '../components/Pool'
 
-export default function SwapPage() {
+export default function PoolPage() {
   return (
     <div className='swap_component'>
         <Navbar></Navbar>
-        <Swap></Swap>
+        <Pool></Pool>
     </div>
   )
 }
